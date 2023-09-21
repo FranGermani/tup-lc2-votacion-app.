@@ -11,3 +11,48 @@ body {
   background-color: rgb(240, 240, 240);
 }
 
+.header-page {
+  background-color:#18a0fb ;
+  padding: 0.5em;
+  color: white;
+}
+.borde_negro{
+  background-color: #333;
+  padding: 0.5em;
+  max-height: 20px;
+}
+
+.active {
+  padding: 2px;
+  font-size: medium;
+  background-color: #333;
+  border: 1px solid white ;
+  position: relative;
+  border-radius: 10px;
+  margin: 10px 90%;
+  color: white;
+  width: 100%;
+  text-align: right;
+  text-decoration: none;
+}
+
+
+#sec-titulo {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+}
+.sec-titulo {
+  display: flex;
+  flex-direction: row; /* Esto coloca los elementos en fila */
+  align-items: center; /* Esto alinea verticalmente los elementos */
+}
+#sec-titulo h2 {
+  flex: 1; /* Hace que el párrafo ocupe el espacio disponible */
+}
+
+
+#sec-titulo img {
+  max-width: 300px; /* Establece un ancho máximo para la imagen */
+  margin-left: 20px; /* Añade un margen a la izquierda de la imagen para separarla del párrafo */
+}
+
