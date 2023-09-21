@@ -1,0 +1,21 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 240);
+  }
+  .header-page {
+    background-color:#18a0fb ;
+    padding: 0.5em;
+    color: white;
+  }
+  .borde_negro{
+    background-color: #333;
+    padding: 0.5em;
+    max-height: 20px;
+  }
