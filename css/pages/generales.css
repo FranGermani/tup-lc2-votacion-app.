@@ -9,3 +9,31 @@
     padding: 0.5em;
     max-height: 20px;
   }
+
+  .active {
+    display: inline-block;
+    padding: 2px;
+    font-size: medium;
+    background-color: #333;
+    border: 1px solid white;
+    position: relative;
+    border-radius: 10px;
+    color: white;
+    width: 45%;
+    text-align: left;
+    text-decoration: none;
+}
+.init{
+  display: inline-block;
+  padding: 2px;
+  font-size: medium;
+  background-color: white;
+  border: 1px solid  #333;
+  position: relative;
+  border-radius: 10px;
+
+  color: #333;
+  width: 45%;
+
+  text-decoration: none;
+}
