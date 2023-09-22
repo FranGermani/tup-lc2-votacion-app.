@@ -2,75 +2,114 @@
 <html lang="es">
 
 <head>
-    <title>informes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informes</title>
     <link rel="shortcut icon" type="image/png" href="img/icons/favicon-16x16.png">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/informes.css">
+
 </head>
 
 <body>
     <header>
         <div class="header-page">
-            <p>
-                <img src="img/Logo_DINE_negativo.png" alt="logo" class="logo" width="150px" href="index.html">
-            </p>
+            <p><a href="index.html"><img src="img/Logo_DINE_negativo.png" alt="logo" class="logo" width="150px"></a></p>
         </div>
-        <section class="opc">
-            <p>CONSULTAR</p>
-            <div class="borde_negro"><a class="boton-paso" href="paso.html">PASO</a></div>
-            <div class=" borde_negro"><a class="boton-general" href="generales.html">GENERALES</a></div>
-            <div class="borde_negro"><a class="active" href="index.html">INICIO</a></div>
-        </section>
+        <div class="borde_negro">
+            <div class="informes-generales">
+                <button class="btn-consulta"><b>CONSULTAR</b></button>
+                <a class="btn-paso" href="informes.html">PASO</a>
+                <a class="btn-generales" href="index.html">GENERALES</a>
+            </div>
+        </div>
     </header>
     <main>
-        <section id="sec-titulo">
-            <h1>Reporte de Elecciones</h1>
-            <table class="grilla">
-                <thead>
-                    <tr>
-                        <th>provincias</th>
-                        <th>eleccion</th>
-                        <th>Datos Generales</th>
-                        <th>Datos por Agrupacion</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><svg height="210" width="800">
-                                <path class="leaflet-interactive" stroke="#18a0fb" stroke-opacity="1" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" fill="#18a0fb" fill-opacity="1"
-                                    fill-rule="evenodd"
-                                    d="M171 55L163 53L150 45L147 50L143 49L133 60L114 60L114 151L116 151L120 155L122 156L126 153L128 149L124 145L126 143L126 138L128 138L129 133L126 129L126 122L134 126L139 126L169 119L179 114L189 97L190 89L189 87L186 87L182 82L185 75L181 69L171 63L170 64L170 58z">
-                                </path>
-                            </svg></td>
-                        <td>
-                            <p class="texto-elecciones-chico">Elecciones 2020 | Generales</p>
-                            <p class="texto-path-chico">2020 > Generales > Provisorio > Senadores
-                                Nacionales > Buenos Aires</p>
-                        </td>
-                        <td>Dato 3</td>
-                    </tr>
-
-                </tbody>
-            </table>
-            <!--Barra de menú principal-->
-            <div class="borde_final"><img src="img/icons/Ministerio-del-Interior_pluma.1ab9a7a7.png" width="40px"><img
-                    src="img/icons/Logo_DINE_negativo.a88f983e.png" width="40px"><img
-                    src="img/icons/logos_001-10.4430c8d5.png" width="40px">
-                <p>Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley 26571 y Art. 105 Ley 19945). Los
-                    porcentajes de las agrupaciones políticas son calculados sobre los votos válidos (PASO) conforme al
-                    art.
-                    45
-                    Ley 26.571 y afirmativos (Generales). No se incluyen los votos correspondientes a los electores
-                    residentes
-                    en el exterior ni privados de la libertad. Al usar este sitio usted acepta los <a>Términos y
-                        Condiciones</a>
-                </p>
-                <p>
-                </p>
-            </div>
-            </footer>
-
+        <table border="1">
+            <tr>
+                <th>Provincia</th>
+                <th>Elección</th>
+                <th>Datos Generales</th>
+                <th>Datos por Agrupación</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="svg-container">
+                        <svg height="180" width="210">
+                            <path class="leaflet-interactive" stroke="#18a0fb" stroke-opacity="1" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" fill="#18a0fb" fill-opacity="1"
+                                fill-rule="evenodd" d="M182 61L179 56L176 58L178 56L176
+                            53L173 55L169 47L168 48L164 45L157 43L158 41L155 41L154 36L149 32L148 33L143 29L142
+                            30L145 32L140 29L138 32L137 30L140 29L139 26L137 28L136 23L133 22L130 27L103 41L81
+                            99L82 134L131 179L159 140L168 137L171 139L174 138L181 141L186 137L195 136L200 130L207
+                            125L205 120L210 118L210 112L205 107L210 110L213 114L215 113L215 110L217 110L218 112L219
+                            111L217 109L221 111L224 109L220 106L222 106L221 102L218 102L216 104L215 103L217 102L212
+                            102L220 101L219 95L216 92L214 86L208 81L200 83L199 80L201 79L202 81L200 77L206 75L203
+                            75L203 73L206 73L201 71L205 70L199 69L198 68L202 68L200 66L195 67L194 66L198 65L188
+                            62L192 62L190 60L183 59L189 64L187 65z"></path>
+                        </svg>
+                    </div>
+                </td>
+                <td>Elecciones 2021| Generales</td>
+                <td>
+                    <span>
+                        <span> <div class="Mesas-informes" style="margin-left: 500px;">
+                            <b><img src="img/img2.png" alt="logo" width="40px">Mesas escrutadas<br>62,71%</b>
+                        </div></span>
+                    <span><div class="electores-informes">
+                        <b><img src="img/img3.png" alt="logo" width="40px">Electores<br>62,71%</b>
+                    </div></span>
+                    <span><div class="participacion-informes">
+                        <img src="img/img4.png" alt="logo" width="40px"><b>Participación sobre escrutado<br>62,71%</b>
+                    </div></span>
+                </td>
+                <td>Datos por Agrupación 1</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="svg-container">
+                        <svg height="180" width="210">
+                            <path class="leaflet-interactive" stroke="#18a0fb" stroke-opacity="1" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" fill="#18a0fb" fill-opacity="1"
+                                fill-rule="evenodd" d="M171 55L163 53L150 45L147 50L143
+                            49L133 60L114 60L114 151L116 151L120 155L122 156L126 153L128 149L124 145L126 143L126
+                            138L128 138L129 133L126 129L126 122L134 126L139 126L169 119L179 114L189 97L190 89L189
+                            87L186 87L182 82L185 75L181 69L171 63L170 64L170 58z"></path>
+                        </svg>
+                    </div>
+                </td>
+                <td>Elecciones 2021| PASO</td>
+                <td>
+                    <span> <div class="Mesas-informes" style="margin-left: 500px;">
+                        <b><img src="img/img2.png" alt="logo" width="40px">Mesas escrutadas<br>62,71%</b>
+                    </div></span>
+                    <span> <div class="electores-informes">
+                        <b><img src="img/img3.png" alt="logo" width="40px">Electores<br>62,71%</b>
+                    </div></span>
+                    <span><div class="participacion-informes">
+                        <img src="img/img4.png" alt="logo" width="40px"><b>Participación sobre escrutado<br>62,71%</b>
+                    </div></span>
+                </td>
+                <td>Datos por Agrupación 2</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <div class="borde_final">
+            <img src="img/icons/Ministerio-del-Interior_pluma.1ab9a7a7.png" width="40px">
+            <img src="img/icons/Logo_DINE_negativo.a88f983e.png" width="40px">
+            <img src="img/icons/logos_001-10.4430c8d5.png" width="40px">
+            <p>Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley 26571 y Art. 105 Ley 19945). Los
+                porcentajes de las agrupaciones políticas son calculados sobre los votos válidos (PASO) conforme al
+                art.
+                45
+                Ley 26.571 y afirmativos (Generales). No se incluyen los votos correspondientes a los electores
+                residentes
+                en el exterior ni privados de la libertad. Al usar este sitio usted acepta los <a>Términos y
+                    Condiciones</a>
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
