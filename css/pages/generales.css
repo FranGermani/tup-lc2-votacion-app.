@@ -4,69 +4,107 @@
 }
 
 .informes_generales{
-  
   background-color: white;
   padding: 0.5em;
   max-height: 20px;
 }
+.boton-inicio{
+  position: relative;
+  left: 60%;
+  padding: 2px;
+  font-size: medium;
+  background-color: rgba(255, 255, 255, 0.829);
+  border: 1px solid #333;
+  position: relative;
+  border-radius: 10px;
+  color: #333;
+  text-decoration: none;
+  margin-left: 10px;
 
-.active {
-  display: inline-block;
+}
+.boton-informes {
   padding: 2px;
   font-size: medium;
   background-color: #333;
   border: 1px solid white;
-  position: relative;
   border-radius: 10px;
-  color: white;
-  width: 10%;
-  text-align: left;
+  color: white;;
   text-decoration: none;
-  left: 30%;
 }
-.init{
-display: inline-block;
-padding: 2px;
-font-size: medium;
-background-color: white;
-border: 1px solid  #333;
-position: relative;
-border-radius: 10px;
 
-color: #333;
-width: 10%;
-left: 87%;
-text-decoration: none;
+.filtro {
+  background-color: #333;
+  color: #37BBed; 
+  border: none; 
+  padding: 5px; 
+  margin-right: 10px;
+  float: left;
+}
+.agregarInforme {
+  border-radius: 10px;
+  width: 174px;
+  height: 70px;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+}
+.agregarInforme button{
+  background-color:  rgba(202, 197, 190, 0.76);
+  color:white;
+  margin: 15px;
+  width: 150px;
+  height: 40px;
 }
 
 .Mesas {
-display: inline-block;
-position: relative;
-left: 53.5%;
-background-color: lightblue;
-color: white;
-padding-right: 100px;
-font-size: small;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin: 15px;
+  width: 174px;
+  height: 70px;
+  text-transform: uppercase;
+  color: white;
+  overflow-y: hidden;
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: 10px;
 }
-
+.Mesas b br{
+  display: inline-block;
+  align-items: center;
+}
 .electores {
-display: inline-block;
-position: relative;
-left: 53.27%;
-max-height: 130px;
-background-color: coral;
+background-color: magenta;
+border-radius: 10px;
+margin: 15px;
+width: 174px;
+height: 70px;
+text-transform: uppercase;
 color: white;
-padding-right: 180px;
-overflow: hidden;
+overflow-y: hidden;
+display: inline-block;
+padding: 0.5rem;
+font-size: 10px;
 }
+.electores b br{
+  display: inline-block;
+  align-items: center;
 
+}
 .participacion {
-display: inline-block;
-position: relative;
-left: 53%;
-background-color:  rgb(112, 76, 159);;
-color: white;
-padding-right: 80px;
-font-size: small;
-max-height: 130px;
+  background-color: rgb(49, 7, 88);
+  border-radius: 10px;
+  margin: 15px;
+  width: 174px;
+  height: 70px;
+  text-transform: uppercase;
+  color: white;
+  overflow-y: hidden;
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: 10px;
+}
+.participacion b br{
+  display: inline-block;
+  align-items: center;
 }
