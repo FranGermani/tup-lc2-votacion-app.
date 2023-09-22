@@ -61,7 +61,10 @@ td {
 th {
     background-color: #f2f2f2;
 }
-.Mesas-informes, .electores-informes, .participacion-informes {
+
+.Mesas-informes,
+.electores-informes,
+.participacion-informes {
     display: inline-block;
     width: 174px;
     height: 70px;
@@ -71,17 +74,38 @@ th {
     padding: 0.5rem;
     font-size: 10px;
     border-radius: 10px;
-  }
-  
-  .Mesas-informes {
+}
+
+.Mesas-informes {
     background-color: lightblue;
-  }
-  
-  .electores-informes {
+}
+
+.electores-informes {
     background-color: magenta;
-    margin-right: 10px; /* Agregar margen derecho para separación */
-  }
-  
-  .participacion-informes {
+    margin-right: 10px;
+}
+
+.participacion-informes {
     background-color: rgb(49, 7, 88);
-  }
+}
+
+.texto-tabla1 {
+    display: grid;
+    color: grey;
+    font-size: x-small;
+
+}
+
+
+.texto-tabla2 {
+    display: grid;
+    color: grey;
+    font-size: x-small;
+}
+.texto-tabla1 h4{
+    text-align: end;
+}
+
+.texto-tabla2 h4{
+    text-align: end;
+}
