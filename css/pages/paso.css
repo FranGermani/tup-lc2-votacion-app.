@@ -180,7 +180,7 @@
     margin-left: 10px;
     font-weight: bold;
     color: var(--textos);
-    fon
+    
 }
 .mapa {
     display: flex;
@@ -234,12 +234,12 @@
     padding-left: 150px;
     padding-top: 30px
 }
-    /* cuando definimos el gráfico en horizontal, lo giramos 90 grados */
+
 .chart-wrap.horizontal .grid {
     transform: rotate(-90deg);
 }
 .chart-wrap.horizontal .bar::after {
-    /* giramos las letras para horizontal*/
+
     transform: rotate(45deg);
     padding-top: 0px;
     display: block;
@@ -251,7 +251,7 @@
     border-left: 2px solid var(--grid-color);
     font-size: 10px;
 }
-    /* posicionamos el % del gráfico*/
+
 .chart-wrap .grid::before {
     font-size: 0.8em;
     font-weight: bold;
@@ -264,7 +264,7 @@
     content: '100%';
     position: absolute;
 }
-    /* giramos las valores de 0% y 100% para horizontal */
+
 .chart-wrap.horizontal .grid::before,
 .chart-wrap.horizontal .grid::after {
     transform: rotate(90deg);
