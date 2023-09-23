@@ -1,8 +1,3 @@
-* {
-  font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
-}
-
 .informes_generales{
   background-color: white;
   padding: 0.5em;
@@ -21,6 +16,15 @@
   text-decoration: none;
   margin-left: 10px;
 
+}
+.boton-informes {
+  padding: 2px;
+  font-size: medium;
+  background-color: #333;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;;
+  text-decoration: none;
 }
 .boton-informes {
   padding: 2px;
@@ -56,55 +60,229 @@
   height: 40px;
 }
 
-.Mesas {
-  background-color: lightblue;
+.iconos {
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 40vh;
+}
+#sec-titulo p{
+  color: #4ab3d6;
+}
+
+#sec-titulo b{
+  color: #333;
+}
+
+.iconos.mesas {
+  display: flex;
+  justify-self: end;
+}
+
+
+.mesas {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  background-color: #37bbed;
   border-radius: 10px;
   margin: 15px;
-  width: 174px;
+  width: 184px;
   height: 70px;
-  text-transform: uppercase;
-  color: white;
-  overflow-y: hidden;
-  display: inline-block;
-  padding: 0.5rem;
-  font-size: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+  color: #fff;
 }
-.Mesas b br{
-  display: inline-block;
-  align-items: center;
+
+.mesas h3{
+  margin-top: -50px;
+  margin-left: 50px;
+}
+.mesas p{
+  margin-top: -15px;
+  margin-left: 55px;
+}
+.mesas svg{
+  margin-top: 10px;
 }
 .electores {
-background-color: magenta;
-border-radius: 10px;
-margin: 15px;
-width: 174px;
-height: 70px;
-text-transform: uppercase;
-color: white;
-overflow-y: hidden;
-display: inline-block;
-padding: 0.5rem;
-font-size: 10px;
-}
-.electores b br{
-  display: inline-block;
-  align-items: center;
-
-}
-.participacion {
-  background-color: rgb(49, 7, 88);
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  background-color:  #ee3d8f;
   border-radius: 10px;
   margin: 15px;
-  width: 174px;
+  width: 184px;
   height: 70px;
-  text-transform: uppercase;
-  color: white;
-  overflow-y: hidden;
-  display: inline-block;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+  color: #fff;
+}
+.electores h3{
+  margin-top: -50px;
+  margin-left: 50px;
+}
+.electores p{
+  margin-top: -15px;
+  margin-left: 55px;
+}
+.electores svg{
+  margin-top: 10px;
+}
+.participacion{
+  grid-column: 5 / 6;
+  grid-row: 1 / 2;
+  background-color:  #9283be;
+  border-radius: 10px;
+  margin: 15px;
+  width: 184px;
+  height: 70px;
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+  color: #fff;
+}
+.participacion h3{
+  margin-top: -60px;
+  margin-left: 50px;
+}
+.participacion p{
+  margin-top: -15px;
+  margin-left: 55px;
+}
+.participacion svg{
+  margin-top: 10px;
+}
+
+.votos {
+  display: flex;
+  overflow: auto;
+  flex-wrap: wrap;
+  grid-row: 2/6;
+  grid-column: 1/3;
+  background-color: #fff;
+  padding: 10px 0 0 0;   
+  border-radius: 25px;
+  border: 1px solid;
+  box-shadow: 1px 1px 1px 1px #373737;
+}
+.progress {
+  height: 35px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  }
+  .progress-bar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: width 0.25s;
+  border-radius: 5px;
+  }
+  .progress-bar-text {
+  margin-left: 10px;
+  font-weight: bold;
+  color: var(--textos);
+  fon
+}
+.mapa {
+  display: flex;
+  overflow: auto;
+  flex-wrap: wrap;
+  grid-row: 2/6;
+  grid-column: 3/4;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-left: 60px; 
+  border-radius: 25px;
+  border: 1px solid;
+  box-shadow: 1px 1px 1px 1px #373737;
+  margin: 15px;
+}
+.chart-wrap {
+  display: flex;
+  overflow: auto;
+  flex-wrap: wrap;
+  grid-row: 2/6;
+  grid-column: 4/7;
+  background-color: #fff;
+  padding: 10px 0 0 0;   
+  border-radius: 25px;
+  border: 1px solid;
+  box-shadow: 1px 1px 1px 1px #373737;
+}
+.bar{
+  padding-top: 50px;
+}
+
+.footer {
+  grid-row: 6/8;
+  grid-column: 1/6;
+}
+
+.chart-wrap {
+  --chart-width: 550px;
+  --grid-color: #aaa;
+  --bar-thickness: 15px;
+  --bar-rounded: 3px;
+  --bar-spacing: 10px;
+  font-family: sans-serif;
+  width: 550px;
+  margin:10px;
+}
+.chart-wrap .title {
+  display: flex;
+  font-weight: bold;
+  font-size: large;
+  padding-left: 150px;
+  padding-top: 30px
+}
+  /* cuando definimos el gráfico en horizontal, lo giramos 90 grados */
+.chart-wrap.horizontal .grid {
+  transform: rotate(-90deg);
+}
+.chart-wrap.horizontal .bar::after {
+  /* giramos las letras para horizontal*/
+  transform: rotate(45deg);
+  padding-top: 0px;
+  display: block;
+}
+.chart-wrap .grid {
+  position: relative;
+  height: 50%;
+  width: 60%;
+  border-left: 2px solid var(--grid-color);
   font-size: 10px;
 }
-.participacion b br{
+  /* posicionamos el % del gráfico*/
+.chart-wrap .grid::before {
+  font-size: 0.8em;
+  font-weight: bold;
+  content: '0%';
+  position: absolute;
+}
+.chart-wrap .grid::after {
+  font-size: 0.8em;
+  font-weight: bold;
+  content: '100%';
+  position: absolute;
+}
+  /* giramos las valores de 0% y 100% para horizontal */
+.chart-wrap.horizontal .grid::before,
+.chart-wrap.horizontal .grid::after {
+  transform: rotate(90deg);
+}
+.chart-wrap .bar {
+  width: var(--bar-value);
+  height: var(--bar-thickness);
+  margin: var(--bar-spacing) 0;
+  background-color: var(--bar-color);
+  border-radius: 0 var(--bar-rounded) var(--bar-rounded) 0;
+}
+.chart-wrap .bar:hover {
+  opacity: 0.7;
+}
+.chart-wrap .bar::after {
+  content: attr(data-name);
+  margin-left: 100%;
+
   display: inline-block;
-  align-items: center;
+  white-space: nowrap;
 }
